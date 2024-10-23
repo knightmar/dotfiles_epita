@@ -1,0 +1,106 @@
+@theme "my"
+
+configuration {
+  modi: "drun";
+  lines: 2;
+  font: "JetBrains Mono Nerd Font 14";
+  show-icons: true;
+  terminal: "kitty";
+  drun-display-format: " {name}";
+  location: 0;
+  disable-history: false;
+  hide-scrollbar: true;
+  display-drun: "󰗍 run";
+}
+
+element-text, element-icon , mode-switcher {
+  background-color: inherit;
+  text-color:       inherit;
+}
+
+window {
+  height: 300px;
+  width: 450px;
+  border: 1px;
+  location: center;
+  x-offset: 0px;
+  y-offset: 0px;
+  border-color: #fdb604;
+  background-color: #0000007F;
+  border-radius: 10px;
+}
+
+mainbox {
+  background-color: @transparent;
+}
+
+inputbar {
+  children: [prompt,entry];
+  background-color: @transparent;
+  color: @green;
+  border-radius: 4px;
+  font: "JetBrains Mono Nerd 13";
+  padding: 2px;
+}
+
+prompt {
+  background-color: @transparent;
+  padding: 6px;
+  text-color: white;
+  border-radius: 5px;
+  margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: ":";
+}
+
+entry {
+  padding: 6px;
+  margin: 20px 0px 0px 10px;
+  background-color: @transparent;
+  color: white;
+}
+
+listview {
+  border: 0px 0px 0px;
+  padding: 6px;
+  margin: 10px;
+  columns: 1;
+  lines: 4;
+  background-color: @transparent;
+}
+
+element {
+  padding: 10px;
+  background-color: @transparent;
+  text-color: @fg-col;
+}
+
+element-icon {
+  size: 25px;
+}
+
+element selected {
+  border-radius: 5px;
+  text-color: #000000;
+  background-color: #fdb604;
+}
+
+mode-switcher {
+  spacing: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: @bg-col-light;
+  text-color: @grey;
+  vertical-align: 0.5; 
+  horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @orange;
+}

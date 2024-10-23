@@ -1,0 +1,7 @@
+[user]
+  email = noah.contal@epita.fr
+  name = Noah CONTAL
+[init]
+  defaultBranch = master
+[core]
+  editor = nvim
