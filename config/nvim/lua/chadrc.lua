@@ -1,8 +1,8 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.base46 = {
-	theme = "github_dark",
+M.ui = {
+	theme = "onedark",
   transparency = true,
   cmp = {
     style = "default",

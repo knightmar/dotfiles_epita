@@ -1,29 +1,16 @@
 local options = {
   formatters_by_ft = {
-    lua = { "stylua" },
-    -- Web
-    css = { "prettier" },
-    html = { "prettier" },
-    javascript = { "prettier" },
     -- C - CPP
     c = { "clang_format" },
     h = { "clang_format" },
     cpp = { "clang_format" },
-    -- Rust
-    rust = { "rustfmt" },
-    -- python
+    -- Python
     python = { "black" },
-    -- ocaml
-    ocaml = { "ocamlformat-rpc" },
-
-    csharp = { "csharpier" },
-  },
-  formatters = {
-    shfmt = { prepend_args = { "-i", "4" } },
+    shell = { "shfmt" },
   },
   format_on_save = {
     -- These options will be passed to conform.format()
-    timeout_ms = 500,
+    timeout_ms = 5000,
     lsp_fallback = true,
   },
   -- log_level = vim.log.levels.ERROR,
