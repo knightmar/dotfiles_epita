@@ -11,24 +11,24 @@ right_format = '$cmd_duration'
 [cmd_duration]
 min_time = 2000
 format = 'in [$duration]($style)'
-style = '#fdb604'
+style = '#95aad5'
 
 [character]
-success_symbol = '[➜](bold #fdb604)' # #8abdb6
+success_symbol = '[➜](bold #95aad5)' # #8abdb6
 error_symbol = '[➜](bold #B6090A)'
 
 [username]
 # style_user = '#938c9c'
 # style_root = '#938c9c'
-style_user = 'bold #fdb604'
-style_root = '#fdb604'
-format = '(#fdb604)[$user]($style) '
+style_user = 'bold #95aad5'
+style_root = '#95aad5'
+format = '(#95aad5)[$user]($style) '
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = '[$hostname](bold #fdb604) '
+format = '[$hostname](bold #95aad5) '
 disabled = true
 
 [directory]

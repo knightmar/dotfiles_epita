@@ -19,7 +19,7 @@
     horizontal_padding = 15
     text_icon_padding = 20
     frame_width = 2
-    frame_color = "#fdb604"
+    frame_color = "#95aad5"
     corner_radius = 10
     separator_color = frame
     sort = yes
@@ -59,14 +59,14 @@
 
 [urgency_low]
     background = "#18182580"
-    foreground = "#fdb604"
-    highlight = "#fdb604"
+    foreground = "#95aad5"
+    highlight = "#95aad5"
     timeout = 10
 
 [urgency_normal]
     background = "#18182580"
-    foreground = "#fdb604"
-    highlight = "#fdb604"
+    foreground = "#95aad5"
+    highlight = "#95aad5"
     timeout = 10
 
 [urgency_critical]

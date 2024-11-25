@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/nonotor/.wallpaper.jpg' 
+/run/current-system/sw/bin/feh --no-fehbg --bg-fill '/home/noah.contal/.wallpaper.jpg' 

@@ -1,18 +1,23 @@
 return {
   auto_install = true,
   ensure_installed = {
-    --format
+    "lua-language-server",
+    "stylua",
+    "css-lsp",
+    "html-lsp",
     "shfmt",
 
     -- c / cpp
     "clangd",
     "clang-format",
 
+    -- rust
+    "rust-analyzer",
+
     -- Python
     "pyright",
     "black",
-
-    --bash
-    "bash_language_server",
+    -- SQL
+    "sqlls",
   },
 }

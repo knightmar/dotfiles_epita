@@ -11,6 +11,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export VISUAL=nvim
 export EDITOR=nvim
+export GTK_THEME=Adwaita:dark
 
 #binds -- see command zle -al -- cat to find keycode
 bindkey "^[[2~" overwrite-mode # Insert
@@ -61,16 +62,6 @@ xbox() {
   esac
 }
 
-#ranger quit on where it was
-rangercd () { 
-    tmp="$(mktemp)"
-    ranger --choosedir="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
 
 # aliases
 alias ls='ls --color=auto -F'
@@ -80,7 +71,6 @@ alias grep='grep --color=auto'
 alias ip='ip -c=auto'
 alias tree='tree -F'
 alias feh='feh -B black --scale-down'
-alias ranger="rangercd"
 
 # init starship
 eval "$(starship init zsh)"
@@ -93,10 +83,6 @@ HISTFILE="$HOME/.zsh_history"
 # Use modern completion system
 autoload -Uz compinit
 compinit
-
-# zsh plugins
-source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' format '%B%FCompleting %d%b%f'
@@ -114,14 +100,17 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# zsh plugins
+# source "$HOME/.config/zsh/zsh-completions/zsh-completions.plugin.zsh"
+#source "/home/nonotor/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # custom highlight : see https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#fdb604,underline'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=#fdb604,underline'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[alias]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[function]='fg=#fdb604'
+# ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#D7FFFF,underline'
+# ZSH_HIGHLIGHT_STYLES[precommand]='fg=#D7FFFF,underline'
+# ZSH_HIGHLIGHT_STYLES[arg0]='fg=#D7FFFF'
+# ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#9CCCF2'
+# ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#9CCCF2'
+# ZSH_HIGHLIGHT_STYLES[redirection]='fg=#D7FFFF'
 
+
+source "${HOME}/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "${HOME}/.nix-profile/share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh"

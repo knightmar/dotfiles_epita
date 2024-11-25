@@ -3,7 +3,7 @@
 # Global settings
 bspc config normal_border_color '#4a4a4a'
 bspc config active_border_color '#848484'
-bspc config focused_border_color '#fdb604'
+bspc config focused_border_color '#95aad5'
 bspc config split_ratio 0.5
 bspc config borderless_monocle false
 bspc config gapless_monocle true

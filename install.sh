@@ -18,9 +18,10 @@ dot_list=(
   vimrc \
   Xdefaults \
 
-  wallpaper.png \
+  wallpaper.jpg \
   xinitrc \
   zshrc \
+  fehbg \
 )
 
 for f in ${dot_list[@]}; do

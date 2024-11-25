@@ -16,16 +16,18 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     unset f
 fi
 
+xrandr --output DP-1 --mode 1920x1080 --rate 75 &
 xsetroot -cursor_name left_ptr
+
+setxkbmap us,fr pc104 grp:win_space_toggle &
 feh --bg-fill "${HOME}/.wallpaper.jpg" &
 
-picom --config "$HOME/.config/picom.conf" &
+picom &
+dunst &
+sxhkd &
 
 for monitor in $(xrandr --listactivemonitors | tail -n +2 | awk '{ print $4; }'); do
     MONITOR="${monitor}" polybar -r bar &
 done
-
-dunst &
-sxhkd &
 
 exec bspwm
