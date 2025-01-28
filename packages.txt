@@ -1,0 +1,10 @@
+hyprland
+hypridle
+libcaca
+hyprlock
+hyprpaper
+xdg-desktop-portal-hyprland
+waybar
+rofi-wayland
+fish
+kitty
