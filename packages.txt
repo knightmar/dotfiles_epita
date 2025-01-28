@@ -8,3 +8,4 @@ waybar
 rofi-wayland
 fish
 kitty
+nerdfonts
