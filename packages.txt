@@ -9,3 +9,4 @@ rofi-wayland
 fish
 kitty
 nerdfonts
+starship
