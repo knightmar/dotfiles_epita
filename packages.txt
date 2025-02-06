@@ -8,6 +8,7 @@ waybar
 rofi-wayland
 fish
 kitty
-nerdfonts
 starship
 lsd
+xwayland
+neovim
