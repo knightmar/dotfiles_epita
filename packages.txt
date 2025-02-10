@@ -12,3 +12,4 @@ starship
 lsd
 xwayland
 neovim
+gh
