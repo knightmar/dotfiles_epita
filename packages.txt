@@ -13,3 +13,4 @@ lsd
 xwayland
 neovim
 gh
+brightnessctl
