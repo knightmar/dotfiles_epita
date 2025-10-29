@@ -269,3 +269,10 @@ tooltip {
   padding-left: 9px;
   padding-right: 9px;
 }
+
+#custom-power-menu {
+    font-size: 22px;     /* Increase icon size */
+    padding: 0 10px;     /* Optional: add space around the icon */
+    color: #e06c75;      /* Optional: change color (example: red) */
+}
+

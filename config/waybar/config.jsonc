@@ -37,6 +37,7 @@
     "custom/paddc",
     "clock#time",
     "custom/paddc",
+    "custom/power-menu"
   ],
 
   "custom/rofi": {
@@ -150,7 +151,7 @@
   "clock#time": {
     "format": "<span color='#cc241d' >󱑂 </span>{:%I:%M %p}",
     "tooltip": false,
-    // "tooltip-format": "Standard Time: {:%I:%M %p}",
+    "tooltip-format": "Standard Time: {:%I:%M %p}",
     "min-length": 8,
     "max-length": 12
   },
@@ -247,5 +248,15 @@
     "on-click-right": "playerctl next",
     "on-click-left": "playerctl previous",
     "on-click": "playerctl play-pause",
+  },
+  
+  "custom/power-menu": {
+    "format": "⏻",
+    "interval": 1,
+    "min-length": 3,
+    "max-length": 3,
+    "tooltip": false,
+    "on-click": "~/.config/hypr/power-menu.sh",
   }
+  
 }
