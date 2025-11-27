@@ -14,3 +14,5 @@ xwayland
 neovim
 gh
 brightnessctl
+nautilus
+bibata-cursors
