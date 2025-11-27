@@ -1,0 +1,27 @@
+# If running interactively, start Fish
+if [[ $- == *i* ]]; then
+    
+    if command -v fish 2>&1 >/dev/null; then
+        exec fish
+    fi
+fi
+
+# Add directories to PATH if they exist
+[ -d "$HOME/afs/bin" ] && export PATH="$HOME/afs/bin:$PATH"
+[ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH"
+
+# Set language and NNTP server
+export LANG=en_US.utf8
+export NNTPSERVER="news.epita.fr"
+
+# Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color -n'
+
+# Prompt
+PS1='[\u@\h \W]\$ '
+
+# Exit if the parent process is not Bash
+if [[ "$(ps -o comm= -p "$PPID")" != "bash" ]]; then
+    return
+fi
