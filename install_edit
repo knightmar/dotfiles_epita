@@ -1,0 +1,6 @@
+for f in ${dot_list[@]}; do
+  ln -s "$AFS_DIR/.confs/$f" "$HOME/.$f"
+done
+
+ln -s "$AFS_DIR/dotfiles_epita/install.sh" "$HOME/install.sh"
+ln -s "$AFS_DIR/dotfiles_epita/packages.txt" "$HOME/packages.txt"
