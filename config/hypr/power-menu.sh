@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Options du menu
 options="🔒 Verrouiller\n🚪 Fermer la session\n↩️ Redémarrer\n⏻ Éteindre"
