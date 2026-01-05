@@ -149,9 +149,9 @@
   },
 
   "clock#time": {
-    "format": "<span color='#cc241d' >󱑂 </span>{:%I:%M %p}",
+    "format": "<span color='#cc241d' >󱑂 </span>{:%H:%M}",
     "tooltip": false,
-    "tooltip-format": "Standard Time: {:%I:%M %p}",
+    "tooltip-format": "Standard Time: {:%H:%M}",
     "min-length": 8,
     "max-length": 12
   },
@@ -161,8 +161,8 @@
     "return-type": "json",
     "format": "{}",
     "tooltip": true,
-    "on-scroll-up": "~/.config/waybar/scripts/brightness-control.sh -o i",
-    "on-scroll-down": "~/.config/waybar/scripts/brightness-control.sh -o d",
+    "on-scroll-up": "~/.config/waybar/scripts/brightness-control.sh i",
+    "on-scroll-down": "~/.config/waybar/scripts/brightness-control.sh d",
     "interval": 1,
     "min-length": 6,
     "max-length": 6
@@ -256,7 +256,7 @@
     "min-length": 3,
     "max-length": 3,
     "tooltip": false,
-    "on-click": "~/.config/hypr/power-menu.sh",
+    "on-click": "./scripts/power-menu.sh",
   }
   
 }
