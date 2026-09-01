@@ -1,3 +1,5 @@
+dolphin
+zen-browser
 hypridle
 libcaca
 hyprlock
