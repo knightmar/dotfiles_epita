@@ -2,7 +2,6 @@
 
 dot_list=(
   bashrc \
-  config \
   emacs \
   gitconfig \
   gitignore \
@@ -30,3 +29,4 @@ done
 
 ln -s "$AFS_DIR/dotfiles_epita/install.sh" "$HOME/install.sh"
 ln -s "$AFS_DIR/dotfiles_epita/packages.txt" "$HOME/packages.txt"
+ln -s "$AFS_DIR/dotfiles_epita/config" "$HOME/.config"
