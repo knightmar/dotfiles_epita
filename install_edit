@@ -16,7 +16,7 @@ dot_list=(
   vim \
   vimrc \
   Xdefaults \
-
+  clang-format \
   wallpaper.jpg \
   xinitrc \
   zshrc \
@@ -30,3 +30,4 @@ done
 ln -s "$AFS_DIR/dotfiles_epita/install.sh" "$HOME/install.sh"
 ln -s "$AFS_DIR/dotfiles_epita/packages.txt" "$HOME/packages.txt"
 ln -s "$AFS_DIR/dotfiles_epita/config" "$HOME/.config"
+ln -s "$AFS_DIR/dotfiles_epita/wallpaper.png" "$HOME/wallpaper.png"
