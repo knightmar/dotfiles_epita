@@ -1,12 +1,13 @@
-dolphin
-zen-browser
+kdePackages.dolphin
+playerctl
+hyprcursor
 hypridle
 libcaca
 hyprlock
 hyprpaper
 xdg-desktop-portal-hyprland
 waybar
-rofi
+wofi
 fish
 kitty
 starship
@@ -19,3 +20,5 @@ gh
 brightnessctl
 slurp
 grim
+bat
+eza

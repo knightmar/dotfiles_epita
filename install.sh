@@ -16,5 +16,8 @@ echo $packages
 # install the actuall packages string
 nix profile install $packages
 
+nix profile add github:NixOS/nixpkgs/nixos-unstable#hyprland
+nix profile add github:ndom91/rose-pine-hyprcursor
+
 # run Hyprland
-Hyprland
+start-hyprland
